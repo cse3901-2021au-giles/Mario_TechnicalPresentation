@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bootstrap</title>
+    <title>Mario Tech Demo</title>
 
     <!-- BootStrap -->
     <link
@@ -30,11 +30,138 @@
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link" href="#grid">Grid</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#button">Button</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#form">Form</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
+
+    <!--************************************** Main Content **************************************-->
+    <div class="container-fluid w-75">
+      <div id="grid"></div>
+      <div id="button"></div>
+
+      <form
+        id="form"
+        class="
+          row
+          g-4
+          w-75
+          m-auto
+          p-3
+          needs-validation
+          border border-5 border-light
+          bg-light
+        "
+      >
+        <!-- First name -->
+        <div class="col-6">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="First Name"
+            required
+          />
+        </div>
+        <!-- Last name -->
+        <div class="col-6">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Last Name"
+            required
+          />
+        </div>
+        <!-- Address -->
+        <div class="col-12">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Address"
+            required
+          />
+        </div>
+        <!-- City -->
+        <div class="col-4">
+          <input type="text" class="form-control" placeholder="City" required />
+        </div>
+        <!-- State -->
+        <div class="col-4">
+          <select class="form-select" id="validationCustom04" required>
+            <option selected disabled value="">Choose State</option>
+            <option>Ohio</option>
+            <option>...</option>
+          </select>
+        </div>
+        <!-- Zip Code -->
+        <div class="col-4">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Zip Code"
+            required
+          />
+        </div>
+
+        <!-- Email -->
+        <div class="col-6">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Email"
+            required
+          />
+        </div>
+        <!-- Confirm Email -->
+        <div class="col-6">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Confirm Email"
+            required
+          />
+        </div>
+
+        <!-- Password -->
+        <div class="col-6">
+          <input
+            type="password"
+            class="form-control"
+            placeholder="Password"
+            required
+          />
+        </div>
+        <!-- Confirm Password -->
+        <div class="col-6">
+          <input
+            type="password"
+            class="form-control"
+            placeholder="Confirm Password"
+            required
+          />
+        </div>
+
+        <!-- Agree to terms -->
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" required />
+            <label class="form-check-label" for="invalidCheck">
+              Agree to terms and conditions
+            </label>
+          </div>
+        </div>
+        <!-- Sign up -->
+        <div class="col-12">
+          <button class="btn btn-primary" type="submit">Sign Up</button>
+        </div>
+      </form>
+    </div>
   </body>
 </html>
