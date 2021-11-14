@@ -90,6 +90,8 @@
             class="form-control"
             placeholder="First Name"
             required
+            pattern="[A-Za-z]+"
+            title="Please enter only letters"
           />
         </div>
         <!-- Last name -->
@@ -99,8 +101,11 @@
             class="form-control"
             placeholder="Last Name"
             required
+            pattern="[A-Za-z]+"
+            title="Please enter only letters"
           />
         </div>
+
         <!-- Address -->
         <div class="col-12">
           <input
@@ -112,11 +117,18 @@
         </div>
         <!-- City -->
         <div class="col-4">
-          <input type="text" class="form-control" placeholder="City" required />
+          <input
+            type="text"
+            class="form-control"
+            placeholder="City"
+            required
+            pattern="[A-Za-z]+"
+            title="Please enter a valid City"
+          />
         </div>
         <!-- State -->
         <div class="col-4">
-          <select class="form-select" id="validationCustom04" required>
+          <select class="form-select" required>
             <option selected disabled value="">Choose State</option>
             <option>Ohio</option>
             <option>...</option>
@@ -129,6 +141,8 @@
             class="form-control"
             placeholder="Zip Code"
             required
+            pattern="[0-9]{5}"
+            title="Must contain 5 numbers"
           />
         </div>
 
@@ -139,6 +153,8 @@
             class="form-control"
             placeholder="Email"
             required
+            pattern="[a-zA-Z]+.[0-9]@osu.edu"
+            title="buckeye.1@osu.edu"
           />
         </div>
         <!-- Confirm Email -->
@@ -148,6 +164,8 @@
             class="form-control"
             placeholder="Confirm Email"
             required
+            pattern="[a-zA-Z]+.[0-9]@osu.edu"
+            title="buckeye.1@osu.edu"
           />
         </div>
 
@@ -158,6 +176,8 @@
             class="form-control"
             placeholder="Password"
             required
+            minlength="8"
+            title="At least 8 character"
           />
         </div>
         <!-- Confirm Password -->
@@ -167,6 +187,8 @@
             class="form-control"
             placeholder="Confirm Password"
             required
+            minlength="8"
+            title="At least 8 character"
           />
         </div>
 
