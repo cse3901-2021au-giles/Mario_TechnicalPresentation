@@ -51,241 +51,256 @@
       </div>
     </nav>
     <!--************************************** Main Content **************************************-->
-    <div class="container-fluid w-75">
+    <div class="container-fluid w-75 mt-5">
       <!--************************************** Form **************************************-->
-      <h3 id="form" class="text-center mt-3 mb-3">Form</h3>
-      <form
-        class="
-          row
-          g-4
-          w-75
-          m-auto
-          p-3
-          needs-validation
-          border border-5 border-light
-          bg-light
-        "
-      >
-        <!-- First name -->
-        <div class="col-md-6 col-sm-12">
-          <input
-            type="text"
-            class="form-control"
-            placeholder="First Name"
-            required
-            pattern="[A-Za-z]+"
-            title="Please enter only letters"
-          />
-        </div>
-        <!-- Last name -->
-        <div class="col-md-6 col-sm-12">
-          <input
-            type="text"
-            class="form-control"
-            placeholder="Last Name"
-            required
-            pattern="[A-Za-z]+"
-            title="Please enter only letters"
-          />
-        </div>
-
-        <!-- Address -->
-        <div class="col-12">
-          <input
-            type="text"
-            class="form-control"
-            placeholder="Address"
-            required
-          />
-        </div>
-        <!-- City -->
-        <div class="col-md-4 col-sm-12">
-          <input
-            type="text"
-            class="form-control"
-            placeholder="City"
-            required
-            pattern="[A-Za-z]+"
-            title="Please enter a valid City"
-          />
-        </div>
-        <!-- State -->
-        <div class="col-md-4 col-sm-12">
-          <select class="form-select" required>
-            <option selected disabled value="">Choose State</option>
-            <option>Ohio</option>
-            <option>...</option>
-          </select>
-        </div>
-        <!-- Zip Code -->
-        <div class="col-md-4 col-sm-12">
-          <input
-            type="text"
-            class="form-control"
-            placeholder="Zip Code"
-            required
-            pattern="[0-9]{5}"
-            title="Must contain 5 numbers"
-          />
-        </div>
-
-        <!-- Email -->
-        <div class="col-md-6 col-sm-12">
-          <input
-            type="text"
-            class="form-control"
-            placeholder="Email"
-            required
-            pattern="[a-zA-Z]+.[0-9]@osu.edu"
-            title="buckeye.1@osu.edu"
-          />
-        </div>
-        <!-- Confirm Email -->
-        <div class="col-md-6 col-sm-12">
-          <input
-            type="text"
-            class="form-control"
-            placeholder="Confirm Email"
-            required
-            pattern="[a-zA-Z]+.[0-9]@osu.edu"
-            title="buckeye.1@osu.edu"
-          />
-        </div>
-
-        <!-- Password -->
-        <div class="col-md-6 col-sm-12">
-          <input
-            type="password"
-            class="form-control"
-            placeholder="Password"
-            required
-            minlength="8"
-            title="At least 8 character"
-          />
-        </div>
-        <!-- Confirm Password -->
-        <div class="col-md-6 col-sm-12">
-          <input
-            type="password"
-            class="form-control"
-            placeholder="Confirm Password"
-            required
-            minlength="8"
-            title="At least 8 character"
-          />
-        </div>
-
-        <!-- Agree to terms -->
-        <div class="col-12">
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" required />
-            <label class="form-check-label" for="invalidCheck">
-              Agree to terms and conditions
-            </label>
+      <div id="form" class="vh-100 d-flex align-items-center">
+        <h3 class="text-center">Form</h3>
+        <form
+          class="
+            row
+            g-4
+            w-75
+            m-auto
+            p-3
+            needs-validation
+            border border-5 border-light
+            bg-light
+          "
+        >
+          <!-- First name -->
+          <div class="col-md-6 col-sm-12">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="First Name"
+              required
+              pattern="[A-Za-z]+"
+              title="Please enter only letters"
+            />
           </div>
-        </div>
-        <!-- Sign up -->
-        <div class="col-12">
-          <button class="btn btn-primary" type="submit">Sign Up</button>
-        </div>
-      </form>
+          <!-- Last name -->
+          <div class="col-md-6 col-sm-12">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Last Name"
+              required
+              pattern="[A-Za-z]+"
+              title="Please enter only letters"
+            />
+          </div>
 
+          <!-- Address -->
+          <div class="col-12">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Address"
+              required
+            />
+          </div>
+          <!-- City -->
+          <div class="col-md-4 col-sm-12">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="City"
+              required
+              pattern="[A-Za-z]+"
+              title="Please enter a valid City"
+            />
+          </div>
+          <!-- State -->
+          <div class="col-md-4 col-sm-12">
+            <select class="form-select" required>
+              <option selected disabled value="">Choose State</option>
+              <option>Ohio</option>
+              <option>...</option>
+            </select>
+          </div>
+          <!-- Zip Code -->
+          <div class="col-md-4 col-sm-12">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Zip Code"
+              required
+              pattern="[0-9]{5}"
+              title="Must contain 5 numbers"
+            />
+          </div>
+
+          <!-- Email -->
+          <div class="col-md-6 col-sm-12">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Email"
+              required
+              pattern="[a-zA-Z]+.[0-9]@osu.edu"
+              title="buckeye.1@osu.edu"
+            />
+          </div>
+          <!-- Confirm Email -->
+          <div class="col-md-6 col-sm-12">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Confirm Email"
+              required
+              pattern="[a-zA-Z]+.[0-9]@osu.edu"
+              title="buckeye.1@osu.edu"
+            />
+          </div>
+
+          <!-- Password -->
+          <div class="col-md-6 col-sm-12">
+            <input
+              type="password"
+              class="form-control"
+              placeholder="Password"
+              required
+              minlength="8"
+              title="At least 8 character"
+            />
+          </div>
+          <!-- Confirm Password -->
+          <div class="col-md-6 col-sm-12">
+            <input
+              type="password"
+              class="form-control"
+              placeholder="Confirm Password"
+              required
+              minlength="8"
+              title="At least 8 character"
+            />
+          </div>
+
+          <!-- Agree to terms -->
+          <div class="col-12">
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                required
+              />
+              <label class="form-check-label" for="invalidCheck">
+                Agree to terms and conditions
+              </label>
+            </div>
+          </div>
+          <!-- Sign up -->
+          <div class="col-12">
+            <button class="btn btn-primary" type="submit">Sign Up</button>
+          </div>
+        </form>
+      </div>
       <!--************************************** Grid **************************************-->
-      <h3 id="grid" class="text-center mt-3 mb-3">Grid</h3>
-      <div
-        id="container"
-        class="row g-4 w-75 m-auto p-3 border border-5 border-light bg-light"
-      >
-        <h5 class="mb-4">General Grid</h5>
-        <div class="row">
-          <div class="col-sm border border-2">One of three columns</div>
-          <div class="col-sm border border-2">One of three columns</div>
-          <div class="col-sm border border-2">One of three columns</div>
-        </div>
+      <div id="grid" class="vh-100 d-flex align-items-center">
+        <h3 class="text-center">Grid</h3>
+        <div
+          id="container"
+          class="row g-4 w-75 m-auto p-3 border border-5 border-light bg-light"
+        >
+          <h5 class="mb-4">General Grid</h5>
+          <div class="row">
+            <div class="col-sm border border-2">One of three columns</div>
+            <div class="col-sm border border-2">One of three columns</div>
+            <div class="col-sm border border-2">One of three columns</div>
+          </div>
 
-        <h5>Equal-Width Grid</h5>
-        <div class="container">
-          <div class="row">
-            <div class="col border border-2">1 of 2</div>
-            <div class="col border border-2">2 of 2</div>
+          <h5>Equal-Width Grid</h5>
+          <div class="container">
+            <div class="row">
+              <div class="col border border-2">1 of 2</div>
+              <div class="col border border-2">2 of 2</div>
+            </div>
+            <div class="row">
+              <div class="col border border-2">1 of 3</div>
+              <div class="col border border-2">2 of 3</div>
+              <div class="col border border-2">3 of 3</div>
+            </div>
           </div>
-          <div class="row">
-            <div class="col border border-2">1 of 3</div>
-            <div class="col border border-2">2 of 3</div>
-            <div class="col border border-2">3 of 3</div>
-          </div>
-        </div>
 
-        <h5>General All Breakpoints</h5>
-        <div class="container">
-          <div class="row">
-            <div class="col border border-2">col</div>
-            <div class="col border border-2">col</div>
-            <div class="col border border-2">col</div>
-            <div class="col border border-2">col</div>
+          <h5>General All Breakpoints</h5>
+          <div class="container">
+            <div class="row">
+              <div class="col border border-2">col</div>
+              <div class="col border border-2">col</div>
+              <div class="col border border-2">col</div>
+              <div class="col border border-2">col</div>
+            </div>
+            <div class="row">
+              <div class="col-8 border border-2">col-8</div>
+              <div class="col-4 border border-2">col-4</div>
+            </div>
           </div>
-          <div class="row">
-            <div class="col-8 border border-2">col-8</div>
-            <div class="col-4 border border-2">col-4</div>
-          </div>
-        </div>
 
-        <h5>Horizontal Alignment</h5>
-        <div class="container">
-          <div class="row justify-content-start">
-            <div class="col-4 border border-2">One of two columns</div>
-            <div class="col-4 border border-2">One of two columns</div>
-          </div>
-          <div class="row justify-content-center">
-            <div class="col-4 border border-2">One of two columns</div>
-            <div class="col-4 border border-2">One of two columns</div>
-          </div>
-          <div class="row justify-content-end">
-            <div class="col-4 border border-2">One of two columns</div>
-            <div class="col-4 border border-2">One of two columns</div>
-          </div>
-          <div class="row justify-content-around">
-            <div class="col-4 border border-2">One of two columns</div>
-            <div class="col-4 border border-2">One of two columns</div>
-          </div>
-          <div class="row justify-content-between">
-            <div class="col-4 border border-2">One of two columns</div>
-            <div class="col-4 border border-2">One of two columns</div>
+          <h5>Horizontal Alignment</h5>
+          <div class="container">
+            <div class="row justify-content-start">
+              <div class="col-4 border border-2">One of two columns</div>
+              <div class="col-4 border border-2">One of two columns</div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-4 border border-2">One of two columns</div>
+              <div class="col-4 border border-2">One of two columns</div>
+            </div>
+            <div class="row justify-content-end">
+              <div class="col-4 border border-2">One of two columns</div>
+              <div class="col-4 border border-2">One of two columns</div>
+            </div>
+            <div class="row justify-content-around">
+              <div class="col-4 border border-2">One of two columns</div>
+              <div class="col-4 border border-2">One of two columns</div>
+            </div>
+            <div class="row justify-content-between">
+              <div class="col-4 border border-2">One of two columns</div>
+              <div class="col-4 border border-2">One of two columns</div>
+            </div>
           </div>
         </div>
       </div>
-
       <!--************************************** Button **************************************-->
-      <h3 id="button" class="text-center mt-3 mb-3">Button</h3>
-      <div
-        id="buttons"
-        class="row g-4 w-75 m-auto p-3 border border-5 border-light bg-light"
-      >
-        <h5>General Buttons</h5>
-        <div id="general-btn">
-          <button type="button" class="btn btn-primary">Primary</button>
-          <button type="button" class="btn btn-secondary">Secondary</button>
-          <button type="button" class="btn btn-success">Success</button>
-          <button type="button" class="btn btn-danger">Danger</button>
-          <button type="button" class="btn btn-warning">Warning</button>
-          <button type="button" class="btn btn-info">Info</button>
-          <button type="button" class="btn btn-light">Light</button>
-          <button type="button" class="btn btn-dark">Dark</button>
+      <div id="button" class="vh-100 d-flex align-items-center">
+        <h3 class="text-center">Button</h3>
+        <div
+          id="buttons"
+          class="row g-4 w-75 m-auto p-3 border border-5 border-light bg-light"
+        >
+          <h5>General Buttons</h5>
+          <div id="general-btn">
+            <button type="button" class="btn btn-primary">Primary</button>
+            <button type="button" class="btn btn-secondary">Secondary</button>
+            <button type="button" class="btn btn-success">Success</button>
+            <button type="button" class="btn btn-danger">Danger</button>
+            <button type="button" class="btn btn-warning">Warning</button>
+            <button type="button" class="btn btn-info">Info</button>
+            <button type="button" class="btn btn-light">Light</button>
+            <button type="button" class="btn btn-dark">Dark</button>
 
-          <button type="button" class="btn btn-link">Link</button>
-        </div>
-        <h5>Outline Buttons</h5>
-        <div id="outline-btn">
-          <button type="button" class="btn btn-outline-primary">Primary</button>
-          <button type="button" class="btn btn-outline-secondary">
-            Secondary
-          </button>
-          <button type="button" class="btn btn-outline-success">Success</button>
-          <button type="button" class="btn btn-outline-danger">Danger</button>
-          <button type="button" class="btn btn-outline-warning">Warning</button>
-          <button type="button" class="btn btn-outline-info">Info</button>
-          <button type="button" class="btn btn-outline-light">Light</button>
-          <button type="button" class="btn btn-outline-dark">Dark</button>
+            <button type="button" class="btn btn-link">Link</button>
+          </div>
+          <h5>Outline Buttons</h5>
+          <div id="outline-btn">
+            <button type="button" class="btn btn-outline-primary">
+              Primary
+            </button>
+            <button type="button" class="btn btn-outline-secondary">
+              Secondary
+            </button>
+            <button type="button" class="btn btn-outline-success">
+              Success
+            </button>
+            <button type="button" class="btn btn-outline-danger">Danger</button>
+            <button type="button" class="btn btn-outline-warning">
+              Warning
+            </button>
+            <button type="button" class="btn btn-outline-info">Info</button>
+            <button type="button" class="btn btn-outline-light">Light</button>
+            <button type="button" class="btn btn-outline-dark">Dark</button>
+          </div>
         </div>
       </div>
     </div>
